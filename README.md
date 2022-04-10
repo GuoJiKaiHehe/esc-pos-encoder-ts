@@ -1,12 +1,12 @@
-# esc-pos-encoder-ts
+# @mexicocss/esc-pos-encoder-ts
 
-Create a set of commands that can be send to any receipt printer that supports ESC/POS
+Create a set of commands that can be send to any receipt printer that supports ESC/POS port to typescript
 
 ## Usage
 
 First, install the package using npm:
 
-    npm install @mexicocss/esc-pos-encoder --save
+    npm install @mexicocss/esc-pos-encoder-ts --save
 
 Then, require the package and use it like so:
 

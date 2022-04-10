@@ -1,7 +1,7 @@
 {
   "name": "@mexicocss/esc-pos-encoder-ts",
   "version": "0.1.0",
-  "description": "Create a set of commands that can be send to any receipt printer that supports ESC/POS",
+  "description": "Create a set of commands that can be send to any receipt printer that supports ESC/POS port to typescript",
   "main": "dist/esc-pos-encoder.js",
   "types": "dist/esc-pos-encoder.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakoujan/EscPosEncoder.git"
+    "url": "git+https://github.com/jakoujan/esc-pos-encoder-ts.git"
   },
   "keywords": [
     "pos",
