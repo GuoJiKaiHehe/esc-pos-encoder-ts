@@ -1,0 +1,47 @@
+{
+  "name": "@mexicocss/esc-pos-encoder-ts",
+  "version": "0.1.0",
+  "description": "Create a set of commands that can be send to any receipt printer that supports ESC/POS",
+  "main": "dist/esc-pos-encoder.js",
+  "types": "dist/esc-pos-encoder.d.ts",
+  "scripts": {
+    "bundle": "browserify dist/esc-pos-encoder.js --standalone EscPosEncoder -o dist/esc-pos-encoder.js",
+    "uglify": "uglifyjs dist/esc-pos-encoder.js -cm --overwrite -o dist/esc-pos-encoder.js",
+    "build": "npm run lint && tsc && npm run bundle && npm run test",
+    "lint": "eslint --fix src/esc-pos-encoder.ts",
+    "mocha": "mocha test/",
+    "test": "npm run mocha",
+    "publish": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakoujan/EscPosEncoder.git"
+  },
+  "keywords": [
+    "pos",
+    "escpos",
+    "receipt",
+    "printer"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.13.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jsdoc": "^39.1.0",
+    "mocha": "^9.2.2",
+    "typescript": "^4.6.3",
+    "uglify-es": "^3.1.10"
+  },
+  "dependencies": {
+    "buffer-to-uint8array": "^1.1.0",
+    "canvas-dither": "^1.0.1",
+    "canvas-flatten": "^1.0.1",
+    "iconv-lite": "^0.6.3",
+    "linewrap": "^0.2.1"
+  }
+}
